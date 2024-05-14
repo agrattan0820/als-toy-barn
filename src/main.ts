@@ -24,6 +24,7 @@ texture.colorSpace = THREE.SRGBColorSpace;
 const geometry = new THREE.PlaneGeometry(221, 282);
 const material = new THREE.MeshBasicMaterial({
   map: texture,
+  side: THREE.DoubleSide,
 });
 const plane = new THREE.Mesh(geometry, material);
 scene.add(plane);
